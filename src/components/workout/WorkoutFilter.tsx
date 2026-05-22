@@ -2,8 +2,18 @@
 
 import { useForm } from "react-hook-form";
 
-export function WorkoutFilter({ onFilter }: { onFilter: (data: any) => void }) {
-  const { register, handleSubmit } = useForm();
+type WorkoutFilterValues = {
+  type: string;
+  bodyPart: string;
+  equipment: string;
+};
+
+export function WorkoutFilter({
+  onFilter,
+}: {
+  onFilter: (data: WorkoutFilterValues) => void;
+}) {
+  const { register, handleSubmit } = useForm<WorkoutFilterValues>();
 
   return (
     <form onSubmit={handleSubmit(onFilter)} className="space-y-4">

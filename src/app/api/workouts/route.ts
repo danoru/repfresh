@@ -1,5 +1,5 @@
 export async function POST(req: Request) {
-  const { type, bodyPart, equipment } = await req.json();
+  const { type, bodyPart } = await req.json();
 
   return Response.json({
     workout: {

@@ -65,7 +65,7 @@ export default function NewWorkoutPage() {
           Build something fresh
         </h1>
         <p className="text-ink-soft">
-          Pick a focus and we'll put together a session.
+          Pick a focus and we&apos;ll put together a session.
         </p>
       </header>
 

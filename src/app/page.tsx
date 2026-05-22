@@ -37,7 +37,7 @@ export default function HomePage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          Pick your focus, your equipment, your time. We'll shuffle together
+          Pick your focus, your equipment, your time. We&apos;ll shuffle together
           something to move you — with form cues for every exercise.
         </motion.p>
 
